@@ -41,7 +41,6 @@ solution "Engine"
 			excludes { "**/MacOS/**", "**/Linux/**" }
 
 		configuration "macosx"
-			buildoptions { "-fgnu89-inline" } -- hack for DevIL
 			linkoptions { "-framework Cocoa", "-framework OpenGL", "-framework QuartzCore" }
 			files { "**.m", "**.mm" }
 			excludes { "**/Windows/**", "**/Linux/**" }
